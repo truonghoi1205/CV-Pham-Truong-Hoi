@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phạm Trường Hội - Professional CV</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="js/html2pdf.bundle.min.js"></script>
+</head>
+<body id="cv-section">
+<button class="download-btn vi" onclick="downloadPDF()">Tải PDF</button>
+<button class="download-btn en hidden" onclick="downloadPDF()">Download PDF</button>
+<div class="language-switch">
+    <button class="language-btn" onclick="toggleLanguage()">EN/VI</button>
+</div>
+<header>
+    <div class="profile-container">
+        <img src="./img/index.png" alt="Profile" class="profile-img">
+        <div class="profile-info">
+            <h1 class="vi">PHẠM TRƯỜNG HỘI</h1>
+            <h1 class="en hidden">PHAM TRUONG HOI</h1>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="left-column">
+        <div class="section">
+            <h2 class="section-title vi">Thông tin liên hệ</h2>
+            <h2 class="section-title en hidden">Contact Information</h2>
+            <div class="contact-item">
+                <div>
+                    <strong class="vi">Ngày sinh:</strong>
+                    <strong class="en hidden">Date of birth:</strong>
+                    <span>20/08/1999</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div>
+                    <strong class="vi">Điện thoại:</strong>
+                    <strong class="en hidden">Phone:</strong>
+                    <span>+84 969 164 615</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div>
+                    <strong>Email:</strong>
+                    <span>phamtruonghoidmx@gmail.com</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div>
+                    <strong class="vi">Địa chỉ:</strong>
+                    <strong class="en hidden">Address:</strong>
+                    <span class="vi">43 Hói Kiểng 20, Hoà Quý, Đà Nẵng</span>
+                    <span class="en hidden">43 Hoi Kieng 20, Hoa Quy, Da Nang</span>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div>
+                    <strong>Github:</strong>
+                    <span><a class="link" href="https://github.com/truonghoi1205"
+                             target="_blank">github.com/truonghoi1205</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title vi">Kỹ năng</h2>
+            <h2 class="section-title en hidden">Skills</h2>
+            <div class="skill-category">
+                <ul class="skill-list vi">
+                    <li class="skill-item">Thành thạo Java, JavaScript, ReactJS, Spring Boot, MySQL</li>
+                    <li class="skill-item">Quen thuộc với CSS, Bootstrap, và Git để làm việc nhóm và quản lý mã nguồn.</li>
+                    <li class="skill-item">Giao tiếp tốt, rõ ràng, sẵn sàng học hỏi, xử lý vấn đề nhanh nhạy.</li>
+                </ul>
+                <ul class="skill-list en hidden">
+                    <li class="skill-item">Proficient in Java, JavaScript, ReactJS, Spring Boot, and MySQL.</li>
+                    <li class="skill-item">Experienced with CSS, Bootstrap, and Git for effective collaboration and source code version control.</li>
+                    <li class="skill-item">Possess strong and clear communication skills, a willingness to learn, and a quick problem-solving mindset.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title vi">Học vấn</h2>
+            <h2 class="section-title en hidden">Education</h2>
+            <div class="education-item">
+                <div class="education-period">02/2024 - 10/2024</div>
+                <div class="education-title vi">Trung tâm đào tạo lập trình Codegym</div>
+                <div class="education-title en hidden">Codegym Programming Training Center</div>
+                <div class="education-description vi">Chương trình Java Web Fullstack</div>
+                <div class="education-description en hidden">Java Web Fullstack Program</div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title vi">Chứng chỉ & Giải thưởng</h2>
+            <h2 class="section-title en hidden">Certificates & Awards</h2>
+            <div class="achievement-item">
+                <div class="vi">Giải khuyến khích Cuộc thi khoe Festival 2024 Codegym</div>
+                <div class="en hidden">Consolation Prize – CodeGym Festival Showcase 2024</div>
+            </div>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="section">
+            <h2 class="section-title vi">Mục tiêu nghề nghiệp</h2>
+            <h2 class="section-title en hidden">Career Objective</h2>
+            <div class="career-objective vi">
+                <ul class="career-objective-highlights">
+                    <li>Làm việc trong môi trường chuyên nghiệp, nơi có thể học hỏi và phát triển bản thân.</li>
+                    <li>Tích lũy thêm kinh nghiệm thực tế trong lĩnh vực phát triển web và phần mềm.</li>
+                    <li>Trở thành một Developer có khả năng xử lý tốt các dự án thực tế và đóng góp hiệu quả cho công ty.</li>
+                </ul>
+            </div>
+            <div class="career-objective en hidden">
+                <ul class="career-objective-highlights"> 
+                    <li>Work in a professional environment where I can learn and develop myself.</li> 
+                    <li>Gain more practical experience in web and software development.</li> 
+                    <li>Become a Developer capable of handling real-world projects effectively and contributing to the company.</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title vi">Kinh nghiệm làm việc</h2>
+            <h2 class="section-title en hidden">Work experience</h2>
+            <div class="project">
+                <div class="project-header">
+                    <h3 class="project-title vi">WordPress Development</h3>
+                    <h3 class="project-title en hidden">WordPress Development</h3>
+                    <span class="project-date">10/2024 - 2/2025</span>
+                </div>
+                <div class="project-description">
+                    <div class="vi">
+                        <p>Phát triển và tùy chỉnh các website bán hàng</p>
+                        <ul class="project-highlights">
+                            <li>Tuỳ chỉnh theme theo yêu cầu khách hàng</li>
+                            <li>Tích hợp và tùy chỉnh các plugin theo nhu cầu</li>
+                            <li>Bảo trì và nâng cấp website định kỳ</li>
+                            <li>Thiết lập và quản lý chiến dịch Google Ads</li>
+                            <li>Phân tích và báo cáo hiệu quả quảng cáo Google</li>
+                        </ul>
+                    </div>
+                    <div class="en hidden">
+                        <p>Develop and customize e-commerce websites</p>
+                        <ul class="project-highlights">
+                            <li>Customize themes based on client requirements</li>
+                            <li>Integrate and tailor plugins according to specific needs</li>
+                            <li>Regularly maintain and upgrade websites</li>
+                            <li>Set up and manage Google Ads campaigns</li>
+                            <li>Analyze and report on Google Ads performance</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">WordPress</span>
+                        <span class="tech-tag">Elementor</span>
+                        <span class="tech-tag">Woocommerce</span>
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2 class="section-title vi">Dự án tiêu biểu</h2>
+            <h2 class="section-title en hidden">Featured Projects</h2>
+            <div class="project">
+                <div class="project-header">
+                    <h3 class="project-title vi">DỰ ÁN WEBSITE QUẢN LÝ BẤT ĐỘNG SẢN</h3>
+                    <h3 class="project-title en hidden">REAL ESTATE MANAGEMENT WEBSITE</h3>
+                    <span class="project-date">08/2024 - 09/2024</span>
+                </div>
+                <div class="project-description">
+                    <div class="vi">
+                        <p class="subtitle">Mô tả dự án:</p>
+                        <p>Xây dựng trang web quản lý bất động sản, cho phép khách hàng đăng tin bán và mua bất động sản dễ dàng.</p>
+                        <p class="subtitle">Nhiệm vụ:</p>
+                        <ul class="project-highlights">
+                            <li>Tham gia phát triển và thiết kế giao diện người dùng (frontend).</li>
+                            <li>Đóng góp vào tính năng đăng tin, upload ảnh qua Firebase, xây dựng thông báo thời gian thực bằng WebSocket.</li>
+                            <li>Phối hợp với nhóm backend sử dụng Spring Boot để xây dựng API quản lý bất động sản.</li>
+                            <li>Kiểm tra, sửa lỗi và tối ưu hiệu suất trước khi triển khai.</li>
+                        </ul>
+                    </div>
+                    <div class="en hidden">
+                        <p class="subtitle">Project description:</p>
+                        <p>Developed a real estate management website, allowing customers to easily post and search for real estate listings.</p>
+                        <p class="subtitle">Responsibilities:</p>
+                        <ul class="project-highlights">
+                            <li>Participated in frontend development and UI design.</li>
+                            <li>Contributed to features such as posting listings, uploading images via Firebase, and building real-time notifications using WebSocket.</li>
+                            <li>Collaborated with the backend team using Spring Boot to develop real estate management APIs.</li>
+                            <li>Tested, debugged, and optimized performance before deployment.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JAVA</span>
+                        <span class="tech-tag">SPRING BOOT</span>
+                        <span class="tech-tag">REACTJS</span>
+                        <span class="tech-tag">BOOTSTRAP</span>
+                        <span class="tech-tag">MYSQL</span>
+                    </div>
+                </div>
+                <div>
+                    <strong>GitHub:</strong>
+                    <div>
+                        <a class="link" href="https://github.com/Real-Estate-Platforms-Project/Real-estate-platforms-project-BE" target="_blank">github.com/Real-Estate-Platforms-Project/Real-estate-platforms-project-BE</a>
+                    </div>
+                    <div>
+                        <a class="link" href="https://github.com/Real-Estate-Platforms-Project/Real-estate-platforms-project-FE" target="_blank">github.com/Real-Estate-Platforms-Project/Real-estate-platforms-project-FE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-header">
+                    <h3 class="project-title vi">DỰ ÁN WEBSITE BÁN GIÀY</h3>
+                    <h3 class="project-title en hidden">SHOE E-COMMERCE WEBSITE</h3>
+                    <span class="project-date">07/2024 - 08/2024</span>
+                </div>
+                <div class="project-description">
+                    <div class="vi">
+                        <p class="subtitle">Mô tả dự án:</p>
+                        <p>Xây dựng trang web quản lý sản phẩm giày, cho phép khách hàng tìm kiếm, mua sắm và quản lý thông tin giày dễ dàng. Hệ thống hỗ trợ thêm, sửa, xóa, và cập nhật giày trong kho.</p>
+                        <p class="subtitle">Nhiệm vụ:</p>
+                        <ul class="project-highlights">
+                            <li>Xây dựng chức năng đăng ký và đăng nhập.</li>
+                            <li>Phân quyền khách hàng, đảm bảo chỉ người dùng đã đăng nhập mới có thể truy cập các tính năng mua hàng.</li>
+                            <li>Tích hợp chức năng gửi email xác thực khi khách hàng đăng ký tài khoản mới.</li>
+                        </ul>
+                    </div>
+                    <div class="en hidden">
+                        <p class="subtitle">Project Description:</p>
+                        <p>Developed a shoe product management website that allows customers to easily search, shop, and manage shoe information. The system supports adding, editing, deleting, and updating products in stock.</p>
+                        <p class="subtitle">Responsibilities:</p>
+                        <ul class="project-highlights">
+                            <li>Implemented user registration and login functionality.</li>
+                            <li>Set up user roles to ensure only logged-in customers can access shopping features.</li>
+                            <li>Integrated email verification functionality upon new user registration.</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JAVA</span>
+                        <span class="tech-tag">SPRING BOOT</span>
+                        <span class="tech-tag">THYMELEAF</span>
+                        <span class="tech-tag">BOOTSTRAP</span>
+                    </div>
+                </div>
+                <div>
+                    <strong>GitHub:</strong>
+                    <a class="link" href="https://github.com/C0324H1-Group1-Org/ShoeStore" target="_blank">github.com/C0324H1-Group1-Org/ShoeStore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    async function downloadPDF() {
+        window.scrollTo(0, 0);
+
+        try {
+            const options = {
+                margin: 8,
+                filename: 'Pham-Truong-Hoi-CV.pdf',
+                image: {type: 'jpeg', quality: 0.98},
+                html2canvas: {
+                    scale: 2,
+                    useCORS: true,
+                    logging: false
+                },
+                jsPDF: {
+                    unit: 'mm',
+                    format: 'a3',
+                    orientation: 'portrait'
+                }
+            };
+
+            const element = document.body;
+
+            await html2pdf().set(options).from(element).save();
+        } catch (error) {
+            console.error('Error generating PDF:', error);
+            alert('Có lỗi xảy ra khi tạo PDF. Vui lòng thử lại sau.');
+        }
+    }
+
+    function toggleLanguage() {
+        const viElements = document.querySelectorAll('.vi');
+        const enElements = document.querySelectorAll('.en');
+
+        viElements.forEach(el => el.classList.toggle('hidden'));
+        enElements.forEach(el => el.classList.toggle('hidden'));
+
+        document.documentElement.lang = document.documentElement.lang === 'vi' ? 'en' : 'vi';
+    }
+</script>
+</body>
+</html>
